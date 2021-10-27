@@ -23,8 +23,7 @@
 }
 
 .container {
-  width: 1240px;
-  height: 10000px;
+  width: 85%;
   margin: auto;
 }
 
@@ -64,17 +63,20 @@
   width: 934px;
   margin-right: 32px;
   margin-left: 32px;
+  border: 3px solid red;
 }
 
 .topside-block {
   position: absolute;
   height: 553px;
   width: 494px;
-  left: 100px;
+  left: 7.5%;
   top: 141px;
   border-radius: 0px;
   background: rgba(255, 255, 255, 0.72);
   z-index: 100;
+  -webkit-backdrop-filter: blur(7px);
+          backdrop-filter: blur(7px);
 }
 
 .topside-block__title {
@@ -181,7 +183,7 @@
   width: 410px;
   height: 40px;
   padding-left: 44px;
-  padding-right: 20px;
+  padding-right: 205px;
   border: none;
   font-family: 'Gilroy Light', sans-serif;
   font-weight: 300;
@@ -253,6 +255,28 @@
   left: 8px;
   max-height: 40px;
   max-width: 40px;
+}
+
+.slick-dots {
+  position: absolute;
+  top: 10px;
+  matgin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  background-color: red;
+  padding: 20px;
+}
+
+.slick-dots li button {
+  border: 1px solid white;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.slick-active {
+  border: 1px solid green;
 }
 
 @font-face {

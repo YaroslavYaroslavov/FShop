@@ -3,7 +3,6 @@
     height: 774px
     background: linear-gradient(to right, #F9F1E7 62%,#FCF8F3 38%)
     position: relative
-      
     &-slider
         display: block
         margin-top: 151px
@@ -19,21 +18,24 @@
         &__img
             height: 553px
             width: 934px
+            
         &__wrapper
             position: relative
             height: 553px
             width: 934px
             margin-right: 32px
             margin-left: 32px
+            border: 3px solid red
     &-block
         position: absolute
         height: 553px   
         width: 494px
-        left: 100px
+        left: 7.5%
         top: 141px
         border-radius: 0px
         background: rgba(255, 255, 255, 0.72)
         z-index: 100
+        backdrop-filter: blur(7px)
         &__title
             position: absolute
             width: 374px
@@ -108,7 +110,7 @@
         width: 410px
         height: 40px
         padding-left: 44px
-        padding-right: 20px
+        padding-right: 205px
         border: none
         +reg    
     &-info
@@ -149,3 +151,23 @@
             left: 8px
             max-height: 40px    
             max-width: 40px 
+.slick 
+    &-dots 
+        position: absolute
+        top: 10px
+        matgin: 0
+        display: flex
+        list-style: none
+        background-color: red
+        padding: 20px
+        
+    &-dots li button
+            border: 1px solid white
+            border-radius: 10px
+            margin: 10px
+            
+            
+    &-active 
+        border: 1px solid green
+            
+
