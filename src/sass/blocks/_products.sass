@@ -1,0 +1,93 @@
+.products
+    &_title
+        display: flex
+        justify-content: center
+        +bold 
+        margin-bottom: 32px
+    &__button
+        width: 245px
+        height: 48px
+        left: 60px
+        top: 415px
+        +med
+        font-size: 20px
+        color: #E89F71
+        background-color: white
+        border: 1px solid  #E89F71
+        margin-left: 597px
+    &-elements
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+        &__element
+            &-block
+                background-color: #F4F5F7
+                position: relative
+                margin-left: 4%
+                margin-bottom: 32px
+                &:first-child
+                    margin-left: 0
+                &:nth-child(5)
+                    margin-left: 0
+                &-circlewrapper
+                    position: absolute
+                    top: 36px
+                    left: 218px
+                &__title
+                    +bold
+                    margin-top: 16px
+                    margin-left: 16px
+                    font-size: 24px
+                &__subtitle
+                    margin-top: 8px
+                    +reg
+                    font-size: 16px
+                    margin-left: 16px   
+                
+                &-cost
+                    +bold
+                    font-size: 20px
+                    display: flex
+                    margin-top: 8px
+                    margin-bottom: 30px
+                    margin-left: 16px   
+                &__costbefore
+                    text-decoration: line-through
+                    +reg
+                    margin-left: 16px
+                    font-size: 16px
+                &-sale
+                    height: 48px
+                    width: 48px
+                    background-color: #E97171
+                    border-radius: 50%
+                    position: relative
+                    &__value
+                        position: absolute
+                        top: 12px
+                        left: 5px
+                        font-size: 16px
+                        line-height: 150%
+                        +med
+                        color: white
+                        &-new
+                            position: absolute
+                            top: 12px
+                            left: 8px
+                            font-size: 16px
+                            line-height: 150%
+                            +med
+                            color: white
+                &-new
+                    height: 48px
+                    width: 48px
+                    background-color: #2EC1AC
+                    border-radius: 50%
+                    position: relative
+                &__img
+                    max-width: 100%
+                    max-height: 100%
+                    width: 285px
+                    height: 301px
+                
+                    

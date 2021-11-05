@@ -1,12 +1,16 @@
 .topside
-    width: 100%
-    height: 774px
+    height: 100%
     background: linear-gradient(to right, #F9F1E7 62%,#FCF8F3 38%)
     position: relative
+    overflow: hidden
+
     &-slider
         display: block
-        margin-top: 151px
-        margin-left: -325px
+        margin-top: 155px 
+        margin-right: -510px
+        
+
+     
         &-block
             background: rgba(255, 255, 255, 0.52)
             backdrop-filter: blur(15px)
@@ -15,6 +19,34 @@
             height: 148px
             left: 600px
             top: 365px
+            z-index: 10
+            display: none
+            
+            &-wrapper
+                position: relative  
+            &__title
+                +med
+                position: absolute
+                font-size: 28px
+                top: 24px
+                left: 24px
+            &__subtitle
+                position: absolute
+                +reg
+                font-size: 16px
+                left: 24.75px
+                top: 62px
+            &-rp
+                position: absolute
+                display: flex
+                left: 24px
+                top: 94px
+                width: 80%
+                justify-content: space-between
+                align-items: center
+                &__rp
+                    +med
+                    font-size: 20px
         &__img
             height: 553px
             width: 934px
@@ -25,12 +57,11 @@
             width: 934px
             margin-right: 32px
             margin-left: 32px
-            border: 3px solid red
     &-block
         position: absolute
         height: 553px   
         width: 494px
-        left: 7.5%
+        left: 12.2%
         top: 141px
         border-radius: 0px
         background: rgba(255, 255, 255, 0.72)
@@ -73,7 +104,7 @@
         width: 104px
         position: absolute
         top: 151px
-        left: 79%
+        left: 82.25%
         &-left
             height: 48px
             width: 48px
@@ -99,6 +130,9 @@
     max-width: 100%
     padding-top: 20px
     align-items: center
+    display: flex
+    justify-content: space-between
+
     &-search
         position: relative
         margin-left: 43px
@@ -110,13 +144,18 @@
         width: 410px
         height: 40px
         padding-left: 44px
-        padding-right: 205px
+        padding-right: 150px
         border: none
         +reg    
     &-info
         display: flex
         width: 336px
         justify-content: space-between
+        &__products
+            display: flex
+        &__rooms
+            display: flex
+        
         +med
         &__arrow
             margin-left: 8px
@@ -124,10 +163,8 @@
         +bold
         font-size: 24px
         margin-right: 41px
-    &-inline
-        display: inline-block 
+    
     &-profile
-        margin-left: 100%
         display: flex
         width: 152px
         height: 45px
@@ -151,23 +188,40 @@
             left: 8px
             max-height: 40px    
             max-width: 40px 
-.slick 
-    &-dots 
-        position: absolute
-        top: 10px
-        matgin: 0
-        display: flex
-        list-style: none
-        background-color: red
-        padding: 20px
+main .slick 
+        &-dots 
+            position: absolute
+            display: flex
+            align-items: center
+            justify-content: center
+            width: 120px
+            justify-content: space-between
+            top: 150px
+            left: 740px
+        &-active div.topside-slider-block
+            display: inline
+
+
+        &-dots li
+            list-style: none
+
+        &-dots li.slick-active button
+            background-color: #E89F71
+            box-shadow: 0 0 0 7px #f9f1e7, 0 0 0 8px #E89F71
+        &-dots button
+
+            padding: 5.5px
+            font-size: 0px
+            width: 1px
+            height: 1px
+            background-color: #D8D8D8
+            border-radius: 100000px       
+            border: none
+
+
+            
+            
+     
         
-    &-dots li button
-            border: 1px solid white
-            border-radius: 10px
-            margin: 10px
-            
-            
-    &-active 
-        border: 1px solid green
             
 
