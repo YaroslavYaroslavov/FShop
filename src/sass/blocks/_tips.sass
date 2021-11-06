@@ -1,0 +1,83 @@
+.tips
+    &-title
+        +bold 
+        font-size: 40px
+        margin-left: 43%
+        margin-top: 48px
+    &-slider
+        &-block
+            margin-left: 50px
+            margin-right: 50px
+            height: 370px
+            margin-top: 35px
+            margin-bottom: 35px
+            &-img
+                width: 391px
+                height: 251px
+            &-text
+                width: 340px
+                margin-top: 19px
+                margin-left: 16px
+            &-title
+                +bold
+                font-size: 24px
+                margin-bottom: 8px
+                
+            &-date
+                +reg
+                font-size: 14px
+section.tips button.slick-next
+    position: absolute
+    height: 48px
+    width: 48px
+    border-radius: 50%
+    top: 130px
+    left: 96%    
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='9' height='16' viewBox='0 0 9 16' fill='none'%3E%3Cpath d='M1.00012 1L8.00012 8L1.00012 15' stroke='%23E89F71' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E")
+    background-repeat: no-repeat
+    background-position: center
+    font-size: 0
+    box-shadow: 0px 4px 14px 1px rgba(0, 0, 0, 0.16)
+    border: none
+section.tips button.slick-prev
+    position: absolute
+    height: 48px
+    width: 48px
+    border-radius: 50%
+    top: 130px
+    left: 0.5%    
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='9' height='16' viewBox='0 0 9 16' fill='none'%3E%3Cpath d='M7.99992 1L0.999924 8L7.99992 15' stroke='%23E89F71' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E")
+    background-repeat: no-repeat
+    background-position: center
+    font-size: 0
+    box-shadow: 0px 4px 14px 1px rgba(0, 0, 0, 0.16)
+    border: none
+    z-index: 100
+section.tips .slick 
+               
+            &-dots li
+                list-style: none
+
+            &-dots li.slick-active button
+                background-color: #E89F71
+                box-shadow: 0 0 0 7px #fFF, 0 0 0 8px #E89F71
+            &-dots button
+                padding: 5.5px
+                font-size: 0px
+                width: 1px
+                height: 1px
+                background-color: #D8D8D8
+                border-radius: 100000px       
+                border: none
+section.tips ul.slick-dots
+    display: flex
+    align-items: center
+    justify-content: center
+    margin-bottom: 55px
+    width: 100px
+    justify-content: space-between
+    margin-left: 44%
+    margin-top: 51px
+section.tips .slick
+            &-active div.tips-slider-block
+                box-shadow: 0px 0px 7px 1px  #000000
