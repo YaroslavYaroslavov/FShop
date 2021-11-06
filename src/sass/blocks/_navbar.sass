@@ -20,7 +20,8 @@
             left: 600px
             top: 365px
             z-index: 10
-            display: none
+            opacity: 0
+            transition: 1s
             
             &-wrapper
                 position: relative  
@@ -67,6 +68,7 @@
         background: rgba(255, 255, 255, 0.72)
         z-index: 100
         backdrop-filter: blur(7px)
+        
         &__title
             position: absolute
             width: 374px
@@ -96,8 +98,12 @@
             +med
             font-size: 20px
             color: white
-            background-color:#E89F71
+            background-color:$main-color
             border: none
+            &:hover
+                cursor: pointer
+            &:active
+                box-shadow: 0px 4px 14px 1px rgba(0, 0, 0, 0.16)
     &-arrows
         display: flex
         justify-content: space-between
@@ -105,12 +111,18 @@
         position: absolute
         top: 151px
         left: 82.25%
+        
         &-left
             height: 48px
             width: 48px
             background-color: #f7decd
             border-radius: 200px
             position: relative
+            
+            &:hover
+                cursor: pointer
+            &:active
+                box-shadow: 0px 4px 14px 1px rgba(0, 0, 0, 0.16)
             &__left
                 position: absolute
                 top: 16px
@@ -119,8 +131,12 @@
             height: 48px
             width: 48px
             border-radius: 200px
-            background: #E89F71
+            background: $main-color
             position: relative
+            &:hover
+                cursor: pointer
+            &:active
+                box-shadow: 0px 4px 14px 1px rgba(0, 0, 0, 0.16)
             &__right
                 position: absolute
                 top: 16px
@@ -151,10 +167,18 @@
         display: flex
         width: 336px
         justify-content: space-between
+        text-decoration: none
         &__products
             display: flex
+            text-decoration: none
+            color: #000 !important
         &__rooms
             display: flex
+            text-decoration: none
+            color: #000 !important
+        &__insp
+            text-decoration: none
+            color: #000 !important
         
         +med
         &__arrow
@@ -199,15 +223,15 @@ main .slick
             top: 150px
             left: 740px
         &-active div.topside-slider-block
-            display: inline
+            opacity: 1
 
 
         &-dots li
             list-style: none
 
         &-dots li.slick-active button
-            background-color: #E89F71
-            box-shadow: 0 0 0 7px #f9f1e7, 0 0 0 8px #E89F71
+            background-color: $main-color
+            box-shadow: 0 0 0 7px #f9f1e7, 0 0 0 8px $main-color
         &-dots button
 
             padding: 5.5px
@@ -217,6 +241,8 @@ main .slick
             background-color: #D8D8D8
             border-radius: 100000px       
             border: none
+            &:hover
+                cursor: pointer
 
 
             

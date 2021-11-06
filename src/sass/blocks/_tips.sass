@@ -39,6 +39,8 @@ section.tips button.slick-next
     font-size: 0
     box-shadow: 0px 4px 14px 1px rgba(0, 0, 0, 0.16)
     border: none
+    &:hover
+        cursor: pointer
 section.tips button.slick-prev
     position: absolute
     height: 48px
@@ -53,14 +55,21 @@ section.tips button.slick-prev
     box-shadow: 0px 4px 14px 1px rgba(0, 0, 0, 0.16)
     border: none
     z-index: 100
+    &:hover
+        cursor: pointer
+    
 section.tips .slick 
                
             &-dots li
                 list-style: none
 
             &-dots li.slick-active button
-                background-color: #E89F71
-                box-shadow: 0 0 0 7px #fFF, 0 0 0 8px #E89F71
+                background-color: $main-color
+                box-shadow: 0 0 0 7px #fFF, 0 0 0 8px $main-color
+                
+                &:hover
+                    cursor: pointer
+                
             &-dots button
                 padding: 5.5px
                 font-size: 0px
@@ -69,6 +78,10 @@ section.tips .slick
                 background-color: #D8D8D8
                 border-radius: 100000px       
                 border: none
+                
+                &:hover
+                    cursor: pointer
+                
 section.tips ul.slick-dots
     display: flex
     align-items: center

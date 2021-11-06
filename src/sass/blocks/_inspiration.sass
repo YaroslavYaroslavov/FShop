@@ -20,6 +20,11 @@
             margin-bottom: 32px
             font-size: 16px
         &__button
+            &:hover
+                cursor: pointer
+            &:active
+                box-shadow: 0px 4px 14px 1px rgba(0, 0, 0, 0.16)
+            
             // position: absolute
             width: 176px
             height: 48px
@@ -28,20 +33,23 @@
             +med
             font-size: 16px
             color: white
-            background-color:#E89F71
+            background-color:$main-color
             border: none
+            
 
     &-slider
         margin-left: 40%
+        
         &-block
             position: absolute
             top: 428px
             left: 24px
-            display: none
+            opacity: 0
             width: 217px
             height: 130px
             background: rgba(255, 255, 255, 0.72)
             backdrop-filter: blur(3px)
+            transition: 1s
             &__title
                 +bold
                 position: absolute
@@ -60,8 +68,12 @@
                 width: 48px
                 height: 48px
                 left: 241px
-                background-color: #E89F71
-                display: none
+                background-color: $main-color
+                opacity: 0
+                &:hover
+                    cursor: pointer
+                &:active
+                    box-shadow: 0px 4px 14px 1px rgba(0, 0, 0, 0.16)
                 &-wrap
                     position: absolute
                     top: 16px
@@ -73,26 +85,31 @@
         &-img
            width: 372px
            height: 486px
+           transition: 1s
 section.inspiration .slick
             &-active
             &-active img.inspiration-slider-img
                 width: 404px
                 height: 582px
                 transition: 0.5s
+                
             &-active div.inspiration-slider-wrapper
                 margin-right: 150px
             &-active div.inspiration-slider-block
-                display: inline
+                opacity: 1
             &-active div.inspiration-slider-block-cross
-                display: inline
+                opacity: 1
 section.inspiration .slick 
             &-dots 
             &-dots li
                 list-style: none
 
             &-dots li.slick-active button
-                background-color: #E89F71
-                box-shadow: 0 0 0 7px #f9f1e7, 0 0 0 8px #E89F71
+                background-color: $main-color
+                box-shadow: 0 0 0 7px #f9f1e7, 0 0 0 8px $main-color
+                
+                &:hover
+                    cursor: pointer
             &-dots button
                 padding: 5.5px
                 font-size: 0px
@@ -101,6 +118,9 @@ section.inspiration .slick
                 background-color: #D8D8D8
                 border-radius: 100000px       
                 border: none
+                
+                &:hover
+                    cursor: pointer
                 
 section.inspiration ul.slick-dots
     display: flex
@@ -125,3 +145,6 @@ section.inspiration button.slick-next
     font-size: 0
     box-shadow: 0px 4px 14px 1px rgba(0, 0, 0, 0.16)
     border: none
+    &:hover
+        cursor: pointer
+                

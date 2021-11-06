@@ -19,21 +19,21 @@
                 <div class="navbar-inline navbar__logo">Funiro.</div>
                 <div class="">
                     <div class="navbar-info">
-                        <div class="navbar-info__products">
+                        <a class="navbar-info__products" href="#products">
                             <div class="navbar-inline navbar-info__text">Products</div>
                             <div class="navbar-inline navbar-info__arrow"><svg width="14" height="9" viewBox="0 0 14 9" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M12.8333 1.50006L7.00001 7.3334L1.16668 1.50006" stroke="#3A3A3A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
                                 </svg>
                             </div>
-                        </div>
-                        <div class="navbar-info__rooms">
+                        </a>
+                        <a class="navbar-info__rooms" href="#rooms">
                             <div class="navbar-inline navbar-info__text">Rooms</div>
                             <div class="navbar-inline navbar-info__arrow"><svg width="14" height="9" viewBox="0 0 14 9" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M12.8333 1.50006L7.00001 7.3334L1.16668 1.50006" stroke="#3A3A3A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
                                 </svg>
                             </div>
-                        </div>
-                        <div class="navbar-info__insp">Inspirations</div>
+                        </a>
+                        <a class="navbar-info__insp" href="#insp">Inspirations</a>
                     </div>
                 </div>
                 <div class="navbar-inline navbar-search">
@@ -206,13 +206,15 @@
     </section>
     <section class="products">
         <div class="container">
-            <h1 class="products_title">Our Products</h1>
+            <h1 class="products_title" id="products">Our Products</h1>
             <div class="products-elements">
                 <div class="products-elements__element-block">
                     <div class="products-elements__element-block-circlewrapper">
                         <div class="products-elements__element-block-sale">
                             <div class="products-elements__element-block-sale__value">-30%</div>
+
                         </div>
+
                     </div>
                     <img class="products-elements__element-block__img" src="/src/img/image 1.jpg" alt="">
                     <div class="products-elements__element-block__title">Syltherine</div>
@@ -221,6 +223,25 @@
                         <div class="products-elements__element-block__costnow">Rp 2.500.000</div>
                         <div class="products-elements__element-block__costbefore">Rp 3.500.000</div>
                     </div>
+                    <div class="products-elements__element-block-hover">
+                        <button class="products-elements__element-block-button">Add to cart</button>
+                        <div class="products-elements__element-block-buttons">
+                            <button class="products-elements__element-block-buttonshare">
+                                <div class="products-elements__element-block-button__icoshare"><svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M15 14C14.212 14 13.5 14.31 12.966 14.807L5.91 10.7C5.96 10.47 6 10.24 6 10C6 9.76 5.96 9.53 5.91 9.3L12.96 5.19C13.5 5.69 14.21 6 15 6C16.66 6 18 4.66 18 3C18 1.34 16.66 0 15 0C13.34 0 12 1.34 12 3C12 3.24 12.04 3.47 12.09 3.7L5.04 7.81C4.5 7.31 3.79 7 3 7C1.34 7 0 8.34 0 10C0 11.66 1.34 13 3 13C3.79 13 4.5 12.69 5.04 12.19L12.088 16.308C12.0317 16.5344 12.0022 16.7667 12 17C12 17.5933 12.1759 18.1734 12.5056 18.6667C12.8352 19.1601 13.3038 19.5446 13.8519 19.7716C14.4001 19.9987 15.0033 20.0581 15.5853 19.9424C16.1672 19.8266 16.7018 19.5409 17.1213 19.1213C17.5409 18.7018 17.8266 18.1672 17.9424 17.5853C18.0581 17.0033 17.9987 16.4001 17.7716 15.8519C17.5446 15.3038 17.1601 14.8352 16.6667 14.5056C16.1734 14.1759 15.5933 14 15 14Z" fill="white"/>
+                            </svg>
+                        </div>
+                        <div class="products-elements__element-block-button__share">Share</div>
+                    </button>
+                            <button class="products-elements__element-block-buttonlike">
+                            <div class="products-elements__element-block-button__icolike"><svg width="24" height="21" viewBox="0 0 24 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11.9996 19.0542C-8 8.00003 5.99999 -3.99997 11.9996 3.58809C18 -3.99997 32 8.00003 11.9996 19.0542Z" stroke="white" stroke-width="1.8"/>
+                                </svg>
+                                
+                    </div>
+                    <div class="products-elements__element-block-button__ike">Like</div></button>
+                        </div>
+                    </div>
                 </div>
                 <div class="products-elements__element-block">
                     <img class="products-elements__element-block__img" src="/src/img/image 2.jpg" alt="">
@@ -228,6 +249,25 @@
                     <div class="products-elements__element-block__subtitle">Stylish cafe chair</div>
                     <div class="products-elements__element-block-cost">
                         <div class="products-elements__element-block__costnow">Rp 2.500.000</div>
+                    </div>
+                    <div class="products-elements__element-block-hover">
+                        <button class="products-elements__element-block-button">Add to cart</button>
+                        <div class="products-elements__element-block-buttons">
+                            <button class="products-elements__element-block-buttonshare">
+                                <div class="products-elements__element-block-button__icoshare"><svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M15 14C14.212 14 13.5 14.31 12.966 14.807L5.91 10.7C5.96 10.47 6 10.24 6 10C6 9.76 5.96 9.53 5.91 9.3L12.96 5.19C13.5 5.69 14.21 6 15 6C16.66 6 18 4.66 18 3C18 1.34 16.66 0 15 0C13.34 0 12 1.34 12 3C12 3.24 12.04 3.47 12.09 3.7L5.04 7.81C4.5 7.31 3.79 7 3 7C1.34 7 0 8.34 0 10C0 11.66 1.34 13 3 13C3.79 13 4.5 12.69 5.04 12.19L12.088 16.308C12.0317 16.5344 12.0022 16.7667 12 17C12 17.5933 12.1759 18.1734 12.5056 18.6667C12.8352 19.1601 13.3038 19.5446 13.8519 19.7716C14.4001 19.9987 15.0033 20.0581 15.5853 19.9424C16.1672 19.8266 16.7018 19.5409 17.1213 19.1213C17.5409 18.7018 17.8266 18.1672 17.9424 17.5853C18.0581 17.0033 17.9987 16.4001 17.7716 15.8519C17.5446 15.3038 17.1601 14.8352 16.6667 14.5056C16.1734 14.1759 15.5933 14 15 14Z" fill="white"/>
+                            </svg>
+                        </div>
+                        <div class="products-elements__element-block-button__share">Share</div>
+                    </button>
+                            <button class="products-elements__element-block-buttonlike">
+                            <div class="products-elements__element-block-button__icolike"><svg width="24" height="21" viewBox="0 0 24 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11.9996 19.0542C-8 8.00003 5.99999 -3.99997 11.9996 3.58809C18 -3.99997 32 8.00003 11.9996 19.0542Z" stroke="white" stroke-width="1.8"/>
+                                </svg>
+                                
+                    </div>
+                    <div class="products-elements__element-block-button__ike">Like</div></button>
+                        </div>
                     </div>
                 </div>
                 <div class="products-elements__element-block">
@@ -243,6 +283,25 @@
                         <div class="products-elements__element-block__costnow">Rp 7.000.000</div>
                         <div class="products-elements__element-block__costbefore">Rp 14.000.000</div>
                     </div>
+                    <div class="products-elements__element-block-hover">
+                        <button class="products-elements__element-block-button">Add to cart</button>
+                        <div class="products-elements__element-block-buttons">
+                            <button class="products-elements__element-block-buttonshare">
+                                <div class="products-elements__element-block-button__icoshare"><svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M15 14C14.212 14 13.5 14.31 12.966 14.807L5.91 10.7C5.96 10.47 6 10.24 6 10C6 9.76 5.96 9.53 5.91 9.3L12.96 5.19C13.5 5.69 14.21 6 15 6C16.66 6 18 4.66 18 3C18 1.34 16.66 0 15 0C13.34 0 12 1.34 12 3C12 3.24 12.04 3.47 12.09 3.7L5.04 7.81C4.5 7.31 3.79 7 3 7C1.34 7 0 8.34 0 10C0 11.66 1.34 13 3 13C3.79 13 4.5 12.69 5.04 12.19L12.088 16.308C12.0317 16.5344 12.0022 16.7667 12 17C12 17.5933 12.1759 18.1734 12.5056 18.6667C12.8352 19.1601 13.3038 19.5446 13.8519 19.7716C14.4001 19.9987 15.0033 20.0581 15.5853 19.9424C16.1672 19.8266 16.7018 19.5409 17.1213 19.1213C17.5409 18.7018 17.8266 18.1672 17.9424 17.5853C18.0581 17.0033 17.9987 16.4001 17.7716 15.8519C17.5446 15.3038 17.1601 14.8352 16.6667 14.5056C16.1734 14.1759 15.5933 14 15 14Z" fill="white"/>
+                            </svg>
+                        </div>
+                        <div class="products-elements__element-block-button__share">Share</div>
+                    </button>
+                            <button class="products-elements__element-block-buttonlike">
+                            <div class="products-elements__element-block-button__icolike"><svg width="24" height="21" viewBox="0 0 24 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11.9996 19.0542C-8 8.00003 5.99999 -3.99997 11.9996 3.58809C18 -3.99997 32 8.00003 11.9996 19.0542Z" stroke="white" stroke-width="1.8"/>
+                                </svg>
+                                
+                    </div>
+                    <div class="products-elements__element-block-button__ike">Like</div></button>
+                        </div>
+                    </div>
                 </div>
                 <div class="products-elements__element-block">
                     <div class="products-elements__element-block-circlewrapper">
@@ -256,6 +315,25 @@
                     <div class="products-elements__element-block-cost">
                         <div class="products-elements__element-block__costnow">Rp 500.000</div>
                     </div>
+                    <div class="products-elements__element-block-hover">
+                        <button class="products-elements__element-block-button">Add to cart</button>
+                        <div class="products-elements__element-block-buttons">
+                            <button class="products-elements__element-block-buttonshare">
+                                <div class="products-elements__element-block-button__icoshare"><svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M15 14C14.212 14 13.5 14.31 12.966 14.807L5.91 10.7C5.96 10.47 6 10.24 6 10C6 9.76 5.96 9.53 5.91 9.3L12.96 5.19C13.5 5.69 14.21 6 15 6C16.66 6 18 4.66 18 3C18 1.34 16.66 0 15 0C13.34 0 12 1.34 12 3C12 3.24 12.04 3.47 12.09 3.7L5.04 7.81C4.5 7.31 3.79 7 3 7C1.34 7 0 8.34 0 10C0 11.66 1.34 13 3 13C3.79 13 4.5 12.69 5.04 12.19L12.088 16.308C12.0317 16.5344 12.0022 16.7667 12 17C12 17.5933 12.1759 18.1734 12.5056 18.6667C12.8352 19.1601 13.3038 19.5446 13.8519 19.7716C14.4001 19.9987 15.0033 20.0581 15.5853 19.9424C16.1672 19.8266 16.7018 19.5409 17.1213 19.1213C17.5409 18.7018 17.8266 18.1672 17.9424 17.5853C18.0581 17.0033 17.9987 16.4001 17.7716 15.8519C17.5446 15.3038 17.1601 14.8352 16.6667 14.5056C16.1734 14.1759 15.5933 14 15 14Z" fill="white"/>
+                            </svg>
+                        </div>
+                        <div class="products-elements__element-block-button__share">Share</div>
+                    </button>
+                            <button class="products-elements__element-block-buttonlike">
+                            <div class="products-elements__element-block-button__icolike"><svg width="24" height="21" viewBox="0 0 24 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11.9996 19.0542C-8 8.00003 5.99999 -3.99997 11.9996 3.58809C18 -3.99997 32 8.00003 11.9996 19.0542Z" stroke="white" stroke-width="1.8"/>
+                                </svg>
+                                
+                    </div>
+                    <div class="products-elements__element-block-button__ike">Like</div></button>
+                        </div>
+                    </div>
                 </div>
                 <div class="products-elements__element-block">
                     <img class="products-elements__element-block__img" src="/src/img/Image 5.jpg" alt="">
@@ -264,7 +342,27 @@
                     <div class="products-elements__element-block-cost">
                         <div class="products-elements__element-block__costnow">Rp 1.500.000</div>
                     </div>
+                    <div class="products-elements__element-block-hover">
+                        <button class="products-elements__element-block-button">Add to cart</button>
+                        <div class="products-elements__element-block-buttons">
+                            <button class="products-elements__element-block-buttonshare">
+                                <div class="products-elements__element-block-button__icoshare"><svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M15 14C14.212 14 13.5 14.31 12.966 14.807L5.91 10.7C5.96 10.47 6 10.24 6 10C6 9.76 5.96 9.53 5.91 9.3L12.96 5.19C13.5 5.69 14.21 6 15 6C16.66 6 18 4.66 18 3C18 1.34 16.66 0 15 0C13.34 0 12 1.34 12 3C12 3.24 12.04 3.47 12.09 3.7L5.04 7.81C4.5 7.31 3.79 7 3 7C1.34 7 0 8.34 0 10C0 11.66 1.34 13 3 13C3.79 13 4.5 12.69 5.04 12.19L12.088 16.308C12.0317 16.5344 12.0022 16.7667 12 17C12 17.5933 12.1759 18.1734 12.5056 18.6667C12.8352 19.1601 13.3038 19.5446 13.8519 19.7716C14.4001 19.9987 15.0033 20.0581 15.5853 19.9424C16.1672 19.8266 16.7018 19.5409 17.1213 19.1213C17.5409 18.7018 17.8266 18.1672 17.9424 17.5853C18.0581 17.0033 17.9987 16.4001 17.7716 15.8519C17.5446 15.3038 17.1601 14.8352 16.6667 14.5056C16.1734 14.1759 15.5933 14 15 14Z" fill="white"/>
+                            </svg>
+                        </div>
+                        <div class="products-elements__element-block-button__share">Share</div>
+                    </button>
+                            <button class="products-elements__element-block-buttonlike">
+                            <div class="products-elements__element-block-button__icolike"><svg width="24" height="21" viewBox="0 0 24 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11.9996 19.0542C-8 8.00003 5.99999 -3.99997 11.9996 3.58809C18 -3.99997 32 8.00003 11.9996 19.0542Z" stroke="white" stroke-width="1.8"/>
+                                </svg>
+                                
+                    </div>
+                    <div class="products-elements__element-block-button__ike">Like</div></button>
+                        </div>
+                    </div>
                 </div>
+
                 <div class="products-elements__element-block">
                     <div class="products-elements__element-block-circlewrapper">
                         <div class="products-elements__element-block-new">
@@ -276,6 +374,25 @@
                     <div class="products-elements__element-block__subtitle">Small mug</div>
                     <div class="products-elements__element-block-cost">
                         <div class="products-elements__element-block__costnow">Rp 150.000</div>
+                    </div>
+                    <div class="products-elements__element-block-hover">
+                        <button class="products-elements__element-block-button">Add to cart</button>
+                        <div class="products-elements__element-block-buttons">
+                            <button class="products-elements__element-block-buttonshare">
+                                <div class="products-elements__element-block-button__icoshare"><svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M15 14C14.212 14 13.5 14.31 12.966 14.807L5.91 10.7C5.96 10.47 6 10.24 6 10C6 9.76 5.96 9.53 5.91 9.3L12.96 5.19C13.5 5.69 14.21 6 15 6C16.66 6 18 4.66 18 3C18 1.34 16.66 0 15 0C13.34 0 12 1.34 12 3C12 3.24 12.04 3.47 12.09 3.7L5.04 7.81C4.5 7.31 3.79 7 3 7C1.34 7 0 8.34 0 10C0 11.66 1.34 13 3 13C3.79 13 4.5 12.69 5.04 12.19L12.088 16.308C12.0317 16.5344 12.0022 16.7667 12 17C12 17.5933 12.1759 18.1734 12.5056 18.6667C12.8352 19.1601 13.3038 19.5446 13.8519 19.7716C14.4001 19.9987 15.0033 20.0581 15.5853 19.9424C16.1672 19.8266 16.7018 19.5409 17.1213 19.1213C17.5409 18.7018 17.8266 18.1672 17.9424 17.5853C18.0581 17.0033 17.9987 16.4001 17.7716 15.8519C17.5446 15.3038 17.1601 14.8352 16.6667 14.5056C16.1734 14.1759 15.5933 14 15 14Z" fill="white"/>
+                            </svg>
+                        </div>
+                        <div class="products-elements__element-block-button__share">Share</div>
+                    </button>
+                            <button class="products-elements__element-block-buttonlike">
+                            <div class="products-elements__element-block-button__icolike"><svg width="24" height="21" viewBox="0 0 24 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11.9996 19.0542C-8 8.00003 5.99999 -3.99997 11.9996 3.58809C18 -3.99997 32 8.00003 11.9996 19.0542Z" stroke="white" stroke-width="1.8"/>
+                                </svg>
+                                
+                    </div>
+                    <div class="products-elements__element-block-button__ike">Like</div></button>
+                        </div>
                     </div>
                 </div>
                 <div class="products-elements__element-block">
@@ -291,6 +408,25 @@
                         <div class="products-elements__element-block__costnow">Rp 7.000.000</div>
                         <div class="products-elements__element-block__costbefore">Rp 14.000.000</div>
                     </div>
+                    <div class="products-elements__element-block-hover">
+                        <button class="products-elements__element-block-button">Add to cart</button>
+                        <div class="products-elements__element-block-buttons">
+                            <button class="products-elements__element-block-buttonshare">
+                                <div class="products-elements__element-block-button__icoshare"><svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M15 14C14.212 14 13.5 14.31 12.966 14.807L5.91 10.7C5.96 10.47 6 10.24 6 10C6 9.76 5.96 9.53 5.91 9.3L12.96 5.19C13.5 5.69 14.21 6 15 6C16.66 6 18 4.66 18 3C18 1.34 16.66 0 15 0C13.34 0 12 1.34 12 3C12 3.24 12.04 3.47 12.09 3.7L5.04 7.81C4.5 7.31 3.79 7 3 7C1.34 7 0 8.34 0 10C0 11.66 1.34 13 3 13C3.79 13 4.5 12.69 5.04 12.19L12.088 16.308C12.0317 16.5344 12.0022 16.7667 12 17C12 17.5933 12.1759 18.1734 12.5056 18.6667C12.8352 19.1601 13.3038 19.5446 13.8519 19.7716C14.4001 19.9987 15.0033 20.0581 15.5853 19.9424C16.1672 19.8266 16.7018 19.5409 17.1213 19.1213C17.5409 18.7018 17.8266 18.1672 17.9424 17.5853C18.0581 17.0033 17.9987 16.4001 17.7716 15.8519C17.5446 15.3038 17.1601 14.8352 16.6667 14.5056C16.1734 14.1759 15.5933 14 15 14Z" fill="white"/>
+                            </svg>
+                        </div>
+                        <div class="products-elements__element-block-button__share">Share</div>
+                    </button>
+                            <button class="products-elements__element-block-buttonlike">
+                            <div class="products-elements__element-block-button__icolike"><svg width="24" height="21" viewBox="0 0 24 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11.9996 19.0542C-8 8.00003 5.99999 -3.99997 11.9996 3.58809C18 -3.99997 32 8.00003 11.9996 19.0542Z" stroke="white" stroke-width="1.8"/>
+                                </svg>
+                                
+                    </div>
+                    <div class="products-elements__element-block-button__ike">Like</div></button>
+                        </div>
+                    </div>
                 </div>
                 <div class="products-elements__element-block">
                     <div class="products-elements__element-block-circlewrapper">
@@ -304,13 +440,32 @@
                     <div class="products-elements__element-block-cost">
                         <div class="products-elements__element-block__costnow">Rp 500.000</div>
                     </div>
+                    <div class="products-elements__element-block-hover">
+                        <button class="products-elements__element-block-button">Add to cart</button>
+                        <div class="products-elements__element-block-buttons">
+                            <button class="products-elements__element-block-buttonshare">
+                                <div class="products-elements__element-block-button__icoshare"><svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M15 14C14.212 14 13.5 14.31 12.966 14.807L5.91 10.7C5.96 10.47 6 10.24 6 10C6 9.76 5.96 9.53 5.91 9.3L12.96 5.19C13.5 5.69 14.21 6 15 6C16.66 6 18 4.66 18 3C18 1.34 16.66 0 15 0C13.34 0 12 1.34 12 3C12 3.24 12.04 3.47 12.09 3.7L5.04 7.81C4.5 7.31 3.79 7 3 7C1.34 7 0 8.34 0 10C0 11.66 1.34 13 3 13C3.79 13 4.5 12.69 5.04 12.19L12.088 16.308C12.0317 16.5344 12.0022 16.7667 12 17C12 17.5933 12.1759 18.1734 12.5056 18.6667C12.8352 19.1601 13.3038 19.5446 13.8519 19.7716C14.4001 19.9987 15.0033 20.0581 15.5853 19.9424C16.1672 19.8266 16.7018 19.5409 17.1213 19.1213C17.5409 18.7018 17.8266 18.1672 17.9424 17.5853C18.0581 17.0033 17.9987 16.4001 17.7716 15.8519C17.5446 15.3038 17.1601 14.8352 16.6667 14.5056C16.1734 14.1759 15.5933 14 15 14Z" fill="white"/>
+                            </svg>
+                        </div>
+                        <div class="products-elements__element-block-button__share">Share</div>
+                    </button>
+                            <button class="products-elements__element-block-buttonlike">
+                            <div class="products-elements__element-block-button__icolike"><svg width="24" height="21" viewBox="0 0 24 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11.9996 19.0542C-8 8.00003 5.99999 -3.99997 11.9996 3.58809C18 -3.99997 32 8.00003 11.9996 19.0542Z" stroke="white" stroke-width="1.8"/>
+                                </svg>
+                                
+                    </div>
+                    <div class="products-elements__element-block-button__ike">Like</div></button>
+                        </div>
+                    </div>
                 </div>
 
             </div>
             <button class="products__button">Show More</button>
         </div>
     </section>
-    <section class="inspiration">
+    <section class="inspiration" id="insp">
         <div class="container">
             <div class="inspiration-text">
                 <div class="inspiration-text__title">50+ Beautiful rooms inspiration</div>
@@ -422,7 +577,7 @@
             </div>
         </div>
     </section>
-    <section class="funiro">
+    <section class="funiro" id="rooms">
         <div class="container">
             <div class="funiro-text">
                 <div class="funiro__subtitle">Share your setup with</div>
