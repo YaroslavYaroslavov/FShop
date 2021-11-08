@@ -27,9 +27,32 @@ html {
 }
 
 .container {
-  max-width: 1440px;
+  max-width: 1240px;
   width: 100%;
   margin: auto;
+}
+
+@media (max-width: 750px) {
+  .container {
+    max-width: 300px;
+  }
+}
+
+.wrapper {
+  margin-top: 100px;
+  width: 1240px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: auto;
+  margin-top: 68px;
+  margin-bottom: 22px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .topside {
@@ -42,8 +65,7 @@ html {
 
 .topside-slider {
   display: block;
-  margin-top: 155px;
-  margin-right: -510px;
+  margin-right: -300px;
 }
 
 .topside-slider-block {
@@ -122,7 +144,6 @@ html {
   position: absolute;
   height: 553px;
   width: 494px;
-  left: 12.2%;
   top: 141px;
   border-radius: 0px;
   background: rgba(255, 255, 255, 0.72);
@@ -188,9 +209,9 @@ html {
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 104px;
-  position: absolute;
-  top: 151px;
-  left: 82.25%;
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
 }
 
 .topside-arrows-left {
@@ -255,7 +276,7 @@ html {
 
 .navbar-search {
   position: relative;
-  margin-left: 43px;
+  margin-right: 43px;
 }
 
 .navbar-search__ico {
@@ -265,10 +286,9 @@ html {
 }
 
 .navbar__search {
-  width: 410px;
+  width: 429px;
   height: 40px;
   padding-left: 44px;
-  padding-right: 150px;
   border: none;
   font-family: 'Gilroy Light', sans-serif;
   font-weight: 300;
@@ -316,7 +336,6 @@ html {
   font-family: 'Gilroy Bold', sans-serif;
   font-weight: 700;
   font-size: 24px;
-  margin-right: 41px;
 }
 
 .navbar-profile {
@@ -360,7 +379,7 @@ html {
 }
 
 main .slick-dots {
-  position: absolute;
+  margin-left: 526px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -375,7 +394,6 @@ main .slick-dots {
       -ms-flex-pack: justify;
           justify-content: space-between;
   top: 150px;
-  left: 740px;
 }
 
 main .slick-active div.topside-slider-block {
@@ -393,6 +411,8 @@ main .slick-dots li.slick-active button {
 }
 
 main .slick-dots button {
+  -webkit-transition: 1s;
+  transition: 1s;
   padding: 5.5px;
   font-size: 0px;
   width: 1px;
@@ -404,6 +424,71 @@ main .slick-dots button {
 
 main .slick-dots button:hover {
   cursor: pointer;
+}
+
+@media (max-width: 750px) {
+  .wrapper {
+    width: 300px;
+    margin-top: 600px;
+  }
+  .navbar-search {
+    display: none;
+  }
+  .navbar-info {
+    display: none;
+  }
+  .navbar-profile {
+    width: 100%;
+  }
+  .navbar-profile__cart {
+    display: none;
+  }
+  .navbar-profile__iwant {
+    display: none;
+  }
+  .topside {
+    height: 100%;
+    background: -webkit-gradient(linear, left top, right top, color-stop(75%, #F9F1E7), color-stop(20%, #FCF8F3));
+    background: linear-gradient(to right, #F9F1E7 75%, #FCF8F3 20%);
+    position: relative;
+    overflow: hidden;
+  }
+  .topside-dots {
+    margin-left: 17%;
+  }
+  .topside-arrows {
+    position: absolute;
+    width: 300px;
+  }
+  .topside-slider {
+    margin-top: 30px;
+    margin-right: -633px;
+  }
+  .topside-slider__img {
+    width: 300px;
+    height: 184px;
+  }
+  .topside-block {
+    top: 100px;
+    width: 300px;
+    height: 520px;
+  }
+  .topside-block__title {
+    width: 200px;
+    top: 30px;
+    left: 25px;
+  }
+  .topside-block__subtitle {
+    display: none;
+  }
+  .topside-block__button {
+    width: 250px;
+    left: 25px;
+  }
+}
+
+main .slick-dots {
+  margin-left: 0;
 }
 
 .feature {
@@ -446,6 +531,34 @@ main .slick-dots button:hover {
 .feature-elements-element-text__subtitle {
   font-family: 'Gilroy Light', sans-serif;
   font-weight: 300;
+}
+
+@media (max-width: 750px) {
+  .feature {
+    margin-top: 44px;
+  }
+  .feature-elements {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .feature-elements-element {
+    margin-left: 0px;
+  }
+  .feature-elements-even {
+    margin-left: 70px;
+    text-align: right;
+  }
+  .feature-elements-even__ico {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    margin-left: 24px;
+  }
 }
 
 @font-face {
@@ -1078,6 +1191,8 @@ section.tips ul.slick-dots {
 section.tips .slick-active div.tips-slider-block {
   -webkit-box-shadow: 0px 0px 7px 1px  #000000;
           box-shadow: 0px 0px 7px 1px  #000000;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .funiro {

@@ -1,3 +1,14 @@
+@import '../_colors' 
+
+.wrapper    
+    margin-top: 100px
+    width: 1240px
+    display: flex
+    justify-content: space-between
+    margin: auto
+    margin-top: 68px
+    margin-bottom: 22px
+    align-items: center
 .topside
     height: 100%
     background: linear-gradient(to right, #F9F1E7 62%,#FCF8F3 38%)
@@ -5,9 +16,8 @@
     overflow: hidden
 
     &-slider
-        display: block
-        margin-top: 155px 
-        margin-right: -510px
+        display: block 
+        margin-right: -300px
         
 
      
@@ -62,7 +72,7 @@
         position: absolute
         height: 553px   
         width: 494px
-        left: 12.2%
+        // left: 12.2%
         top: 141px
         border-radius: 0px
         background: rgba(255, 255, 255, 0.72)
@@ -98,7 +108,7 @@
             +med
             font-size: 20px
             color: white
-            background-color:$main-color
+            background-color: $main-color
             border: none
             &:hover
                 cursor: pointer
@@ -108,9 +118,10 @@
         display: flex
         justify-content: space-between
         width: 104px
-        position: absolute
-        top: 151px
-        left: 82.25%
+        // position: absolute
+        // top: 151px
+        order: 2
+        
         
         &-left
             height: 48px
@@ -123,6 +134,7 @@
                 cursor: pointer
             &:active
                 box-shadow: 0px 4px 14px 1px rgba(0, 0, 0, 0.16)
+                
             &__left
                 position: absolute
                 top: 16px
@@ -151,16 +163,15 @@
 
     &-search
         position: relative
-        margin-left: 43px
+        margin-right: 43px
         &__ico
             position: absolute
             top: 15px
             left: 15px
     &__search
-        width: 410px
+        width: 429px
         height: 40px
         padding-left: 44px
-        padding-right: 150px
         border: none
         +reg    
     &-info
@@ -186,7 +197,7 @@
     &__logo
         +bold
         font-size: 24px
-        margin-right: 41px
+        
     
     &-profile
         display: flex
@@ -214,14 +225,17 @@
             max-width: 40px 
 main .slick 
         &-dots 
-            position: absolute
+            
+            margin-left: 526px  
+            // position: absolute
             display: flex
             align-items: center
             justify-content: center
             width: 120px
             justify-content: space-between
             top: 150px
-            left: 740px
+            
+            // left: 740px
         &-active div.topside-slider-block
             opacity: 1
 
@@ -233,7 +247,7 @@ main .slick
             background-color: $main-color
             box-shadow: 0 0 0 7px #f9f1e7, 0 0 0 8px $main-color
         &-dots button
-
+            transition: 1s
             padding: 5.5px
             font-size: 0px
             width: 1px
@@ -243,10 +257,57 @@ main .slick
             border: none
             &:hover
                 cursor: pointer
+@media(max-width: 750px)
+    .wrapper
+        width: 300px
+        margin-top: 600px
+    .navbar
+        &-search
+            display: none
+        &-info
+            display: none
+        &-profile
+            width: 100%
+            &__cart
+                display: none
+            &__iwant
+                display: none
+    .topside
+        height: 100%
+        background: linear-gradient(to right, #F9F1E7 75%,#FCF8F3 20%)
+        position: relative
+        overflow: hidden
+        
+        &-dots
+            margin-left: 17%
+        &-arrows 
+            position: absolute
+            width: 300px
+        &-slider
+            margin-top: 30px
+            margin-right: -633px
+            &__img
+                width: 300px
+                height: 184px
+        &-block
+            top: 100px
+            width: 300px
+            height: 520px
+            &__title
+                width: 200px
+                top: 30px
+                left: 25px
+            &__subtitle
+                display: none
+            &__button
+                width: 250px
+                left: 25px
+main .slick
+    &-dots
+        margin-left: 0
+                
 
 
-            
-            
      
         
             
