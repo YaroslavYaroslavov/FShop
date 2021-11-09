@@ -1,4 +1,7 @@
 @import '../_colors' 
+section.inspiration .slick-slider
+        position: absolute
+        left: 39%
 .inspiration
     background-color: #FCF8F3
     display: flex
@@ -9,8 +12,8 @@
     height: 580px
     &-text
         width: 378px
-        position: absolute
-        left: 12.2%
+        
+        
         top: 223px
         &__title
             +bold
@@ -38,9 +41,12 @@
             border: none
             
 
+    
     &-slider
-        margin-left: 40%
         
+        position: absolute
+        top: 0
+        left: 0
         &-block
             position: absolute
             top: 428px
@@ -148,4 +154,20 @@ section.inspiration button.slick-next
     border: none
     &:hover
         cursor: pointer
+@media(max-width: 750px)
+    .inspiration
+        display: flex    
+        flex-direction: column
+        height: 100%
+        &-text
+            position: static
+            text-align: center
+            width: 100%
+            &__title
+                width: 299px
+            &__subtitle
+                
+            
+    section.inspiration .slick-slider
+        display: none
                 

@@ -5,6 +5,7 @@
         +bold 
         margin-bottom: 32px
     &__button
+        display: block
         width: 245px
         height: 48px
         left: 60px
@@ -14,8 +15,7 @@
         color: $main-color
         background-color: white
         border: 1px solid  $main-color
-        margin-left: 597px
-        margin-bottom: 44px
+        margin: auto
         &:hover
             cursor: pointer
         &:active
@@ -29,7 +29,7 @@
             &-block
                 background-color: #F4F5F7
                 position: relative
-                margin-left: 4%
+                
                 margin-bottom: 32px
                 &-hover
                     position: absolute
@@ -171,5 +171,9 @@
                     max-height: 100%
                     width: 285px
                     height: 301px
-            
-                    
+@media(max-width: 750px)
+    .products
+        &-elements
+            flex-direction: column
+            &__element
+                

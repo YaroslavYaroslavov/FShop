@@ -1,5 +1,6 @@
 .funiro
     height: 748px
+    overflow: hidden
     &-text
         width: 305px
         margin: auto
@@ -15,9 +16,10 @@
         font-size: 40px
 
     &-img
-        width: 1440px
-        position: relative
+        width:  1440px
         margin: auto
+        position: relative
+        
     &__img1
         position: absolute
         top: -27px
@@ -70,3 +72,7 @@
         top: -27px
         height: 433px
         width: 136px
+@media(max-width: 750px)
+    .funiro
+        &-img
+            margin-top: 25px
