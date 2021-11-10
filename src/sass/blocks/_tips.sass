@@ -1,4 +1,6 @@
 .tips
+    overflow: hidden
+    padding-bottom: 10px
     &-title
         +bold
         display: flex
@@ -116,3 +118,25 @@ section.tips .slick
         opacity: 0
     section.tips button.slick-next
         opacity: 0
+@media(max-width: 1240px)
+    .tips
+        &-slider
+            margin: auto
+            width: 100%
+            &-block
+                width: 295px
+                height: 100%
+                padding-bottom: 15px
+                &-img
+                    width: 295px
+                    height: 187px
+                &-title
+                
+                    width: 280px
+    
+    section.tips button.slick-prev
+        opacity: 0
+    section.tips button.slick-next
+        opacity: 0
+    
+    

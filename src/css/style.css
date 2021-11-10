@@ -38,16 +38,22 @@ html {
   }
 }
 
+@media (max-width: 1240px) {
+  .container {
+    max-width: 750px;
+  }
+}
+
 .wrapper {
   margin-top: 100px;
-  width: 1240px;
+  width: 714px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin: auto;
+  margin-left: 526px;
   margin-top: 68px;
   margin-bottom: 22px;
   -webkit-box-align: center;
@@ -394,6 +400,7 @@ main .slick-dots {
       -ms-flex-pack: justify;
           justify-content: space-between;
   top: 150px;
+  padding: 0;
 }
 
 main .slick-active div.topside-slider-block {
@@ -426,23 +433,67 @@ main .slick-dots button:hover {
   cursor: pointer;
 }
 
+@media (max-width: 1240px) {
+  .navbar-info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .navbar__search {
+    width: 240px;
+    height: 40px;
+    padding-left: 44px;
+    border: none;
+    font-family: 'Gilroy Light', sans-serif;
+    font-weight: 300;
+  }
+  .topside-slider {
+    margin-right: 0px;
+  }
+  .wrapper {
+    width: 346px;
+    margin-left: 404px;
+  }
+  .topside-block {
+    width: 384px;
+  }
+  .topside-block__title {
+    left: 20px;
+    width: 344px;
+  }
+  .topside-block__subtitle {
+    left: 20px;
+  }
+  .topside-block__button {
+    left: 20px;
+    width: 344px;
+  }
+}
+
 @media (max-width: 750px) {
   .flex {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    margin-top: 550px;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    margin-top: 0px;
   }
   .wrapper {
     width: 300px;
     margin-top: 5px;
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
+    margin-left: 0px;
+    margin: auto;
+  }
+  .navbar {
+    width: 300px;
+    margin: auto;
   }
   .navbar-search {
     display: none;
@@ -467,7 +518,8 @@ main .slick-dots button:hover {
     overflow: hidden;
   }
   .topside-dots {
-    margin-left: 17%;
+    width: 120px;
+    margin: auto;
   }
   .topside-arrows {
     position: absolute;
@@ -482,7 +534,8 @@ main .slick-dots button:hover {
     height: 184px;
   }
   .topside-block {
-    top: 100px;
+    position: static;
+    margin: auto;
     width: 300px;
     height: 520px;
   }
@@ -546,8 +599,10 @@ main .slick-dots {
   font-weight: 300;
 }
 
-@media (max-width: 750px) {
+@media (max-width: 1240px) {
   .feature {
+    width: 255px;
+    margin: auto;
     margin-top: 44px;
   }
   .feature-elements {
@@ -561,6 +616,42 @@ main .slick-dots {
   }
   .feature-elements-element {
     margin-left: 0px;
+  }
+  .feature-elements-element-text {
+    width: 180px;
+  }
+  .feature-elements-even {
+    margin-left: 70px;
+    text-align: right;
+  }
+  .feature-elements-even__ico {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    margin-left: 24px;
+  }
+}
+
+@media (max-width: 750px) {
+  .feature {
+    width: 255px;
+    margin: auto;
+    margin-top: 44px;
+  }
+  .feature-elements {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .feature-elements-element {
+    margin-left: 0px;
+  }
+  .feature-elements-element-text {
+    width: 120px;
   }
   .feature-elements-even {
     margin-left: 70px;
@@ -761,14 +852,6 @@ main .slick-dots {
           box-shadow: 0px 4px 14px 1px rgba(0, 0, 0, 0.16);
 }
 
-.products-elements__element-block:first-child {
-  margin-left: 0;
-}
-
-.products-elements__element-block:nth-child(5) {
-  margin-left: 0;
-}
-
 .products-elements__element-block-circlewrapper {
   position: absolute;
   top: 36px;
@@ -862,6 +945,11 @@ main .slick-dots {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .products-elements__element-block {
+    width: 285px;
+    margin: auto;
+    margin-bottom: 20px;
   }
 }
 
@@ -1086,6 +1174,31 @@ section.inspiration button.slick-next:hover {
   cursor: pointer;
 }
 
+@media (max-width: 1240px) {
+  .inspiration {
+    height: 300px;
+  }
+  .inspiration-text {
+    position: static;
+    text-align: center;
+    width: 100%;
+  }
+  .inspiration-text__title {
+    width: 299px;
+    margin: auto;
+  }
+  .inspiration-text__subtitle {
+    width: 299px;
+    margin: auto;
+  }
+  .inspiration-text__button {
+    margin-top: 20px;
+  }
+  section.inspiration .slick-slider {
+    display: none;
+  }
+}
+
 @media (max-width: 750px) {
   .inspiration {
     display: -webkit-box;
@@ -1104,10 +1217,23 @@ section.inspiration button.slick-next:hover {
   }
   .inspiration-text__title {
     width: 299px;
+    margin: auto;
+  }
+  .inspiration-text__subtitle {
+    width: 299px;
+    margin: auto;
+  }
+  .inspiration-text__button {
+    margin-top: 20px;
   }
   section.inspiration .slick-slider {
     display: none;
   }
+}
+
+.tips {
+  overflow: hidden;
+  padding-bottom: 10px;
 }
 
 .tips-title {
@@ -1272,9 +1398,35 @@ section.tips .slick-active div.tips-slider-block {
   }
 }
 
+@media (max-width: 1240px) {
+  .tips-slider {
+    margin: auto;
+    width: 100%;
+  }
+  .tips-slider-block {
+    width: 295px;
+    height: 100%;
+    padding-bottom: 15px;
+  }
+  .tips-slider-block-img {
+    width: 295px;
+    height: 187px;
+  }
+  .tips-slider-block-title {
+    width: 280px;
+  }
+  section.tips button.slick-prev {
+    opacity: 0;
+  }
+  section.tips button.slick-next {
+    opacity: 0;
+  }
+}
+
 .funiro {
   height: 748px;
   overflow: hidden;
+  margin-top: 50px;
 }
 
 .funiro-text {
@@ -1373,7 +1525,7 @@ section.tips .slick-active div.tips-slider-block {
   width: 136px;
 }
 
-@media (max-width: 750px) {
+@media (max-width: 1240px) {
   .funiro-img {
     margin-top: 25px;
   }
@@ -1506,7 +1658,7 @@ section.tips .slick-active div.tips-slider-block {
   left: 14px;
 }
 
-@media (max-width: 750px) {
+@media (max-width: 1240px) {
   .footer-footerflex {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
