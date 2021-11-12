@@ -1,20 +1,20 @@
 @import '../_colors' 
-section.inspiration .slick-slider
+.inspiration .slick-slider
         position: absolute
         left: 39%
 .inspiration
-    background-color: #FCF8F3
+    background-color: $inspiration-color
     display: flex
     overflow: hidden
-    position: relative    
-    padding-top: 44px
-    padding-bottom: 44px
-    height: 580px
+    position: relative
+    
+    padding-bottom: 100px
+    height: 582px
     &-text
         width: 378px
         
         
-        top: 223px
+        
         &__title
             +bold
             font-size: 40px
@@ -28,8 +28,6 @@ section.inspiration .slick-slider
                 cursor: pointer
             &:active
                 box-shadow: 0px 4px 14px 1px rgba(0, 0, 0, 0.16)
-            
-            // position: absolute
             width: 176px
             height: 48px
             left: 60px
@@ -45,7 +43,7 @@ section.inspiration .slick-slider
     &-slider
         
         position: absolute
-        top: 0
+        top: 44px
         left: 0
         &-block
             position: absolute
@@ -54,7 +52,7 @@ section.inspiration .slick-slider
             opacity: 0
             width: 217px
             height: 130px
-            background: rgba(255, 255, 255, 0.72)
+            background: $blur
             backdrop-filter: blur(3px)
             transition: 1s
             &__title
@@ -93,7 +91,7 @@ section.inspiration .slick-slider
            width: 372px
            height: 486px
            transition: 1s
-section.inspiration .slick
+.inspiration .slick
             &-active
             &-active img.inspiration-slider-img
                 width: 404px
@@ -106,7 +104,7 @@ section.inspiration .slick
                 opacity: 1
             &-active div.inspiration-slider-block-cross
                 opacity: 1
-section.inspiration .slick 
+.inspiration .slick 
             &-dots 
             &-dots li
                 list-style: none
@@ -122,14 +120,14 @@ section.inspiration .slick
                 font-size: 0px
                 width: 1px
                 height: 1px
-                background-color: #D8D8D8
+                background-color: $tips-button-color
                 border-radius: 100000px       
                 border: none
                 
                 &:hover
                     cursor: pointer
                 
-section.inspiration ul.slick-dots
+.inspiration ul.slick-dots
     display: flex
     align-items: center
     justify-content: center
@@ -139,7 +137,7 @@ section.inspiration ul.slick-dots
     top: 500px
     left: 397px
     
-section.inspiration button.slick-next
+.inspiration button.slick-next
     position: absolute
     height: 48px
     width: 48px
@@ -154,7 +152,7 @@ section.inspiration button.slick-next
     border: none
     &:hover
         cursor: pointer
-@media(max-width: 1240px)
+@media(max-width: 1350px)
     .inspiration
         height: 300px
         &-text
@@ -170,7 +168,7 @@ section.inspiration button.slick-next
                 margin: auto
             &__button
                 margin-top: 20px
-    section.inspiration .slick-slider
+    .inspiration .slick-slider
         display: none
         
 
@@ -183,7 +181,7 @@ section.inspiration button.slick-next
             position: static
             text-align: center
             width: 100%
-
+            margin-top: 60px
             &__title
                 width: 299px
                 margin: auto
@@ -194,6 +192,6 @@ section.inspiration button.slick-next
                 margin-top: 20px
                 
             
-    section.inspiration .slick-slider
+    .inspiration .slick-slider
         display: none
                 

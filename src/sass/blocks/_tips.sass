@@ -31,63 +31,63 @@
             &-date
                 +reg
                 font-size: 14px
-section.tips button.slick-next
-    position: absolute
-    height: 48px
-    width: 48px
-    border-radius: 50%
-    top: 130px
-    left: 98%    
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='9' height='16' viewBox='0 0 9 16' fill='none'%3E%3Cpath d='M1.00012 1L8.00012 8L1.00012 15' stroke='%23E89F71' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E")
-    background-repeat: no-repeat
-    background-position: center
-    font-size: 0
-    box-shadow: 0px 4px 14px 1px rgba(0, 0, 0, 0.16)
-    border: none
-    &:hover
-        cursor: pointer
-section.tips button.slick-prev
-    position: absolute
-    height: 48px
-    width: 48px
-    border-radius: 50%
-    top: 130px
-    left: -2%
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='9' height='16' viewBox='0 0 9 16' fill='none'%3E%3Cpath d='M7.99992 1L0.999924 8L7.99992 15' stroke='%23E89F71' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E")
-    background-repeat: no-repeat
-    background-position: center
-    font-size: 0
-    box-shadow: 0px 4px 14px 1px rgba(0, 0, 0, 0.16)
-    border: none
-    z-index: 100
-    &:hover
-        cursor: pointer
-    
-section.tips .slick 
-               
-            &-dots li
-                list-style: none
+.tips .slick
+    &-active .tips-slider-block
+        box-shadow: 0px 0px 7px 1px  #000000
+        transition: 0.5s
+    &-next
+        position: absolute
+        height: 48px
+        width: 48px
+        border-radius: 50%
+        top: 130px
+        left: 98%    
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='9' height='16' viewBox='0 0 9 16' fill='none'%3E%3Cpath d='M1.00012 1L8.00012 8L1.00012 15' stroke='%23E89F71' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E")
+        background-repeat: no-repeat
+        background-position: center
+        font-size: 0
+        box-shadow: 0px 4px 14px 1px rgba(0, 0, 0, 0.16)
+        border: none
+        &:hover
+            cursor: pointer
+    &-prev
+        position: absolute
+        height: 48px
+        width: 48px
+        border-radius: 50%
+        top: 130px
+        left: -2%
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='9' height='16' viewBox='0 0 9 16' fill='none'%3E%3Cpath d='M7.99992 1L0.999924 8L7.99992 15' stroke='%23E89F71' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E")
+        background-repeat: no-repeat
+        background-position: center
+        font-size: 0
+        box-shadow: 0px 4px 14px 1px rgba(0, 0, 0, 0.16)
+        border: none
+        z-index: 100
+        &:hover
+            cursor: pointer
+       
+    &-dots li
+        list-style: none
 
-            &-dots li.slick-active button
-                background-color:  $main-color
-                box-shadow: 0 0 0 7px #fFF, 0 0 0 8px  $main-color
+    &-dots li.slick-active button
+        background-color:  $main-color
+        box-shadow: 0 0 0 7px #fFF, 0 0 0 8px  $main-color        
+        &:hover
+            cursor: pointer
                 
-                &:hover
-                    cursor: pointer
+    &-dots button
+        padding: 5.5px
+        font-size: 0px
+        width: 1px
+        height: 1px
+        background-color: $tips-button-color
+        border-radius: 100000px       
+        border: none            
+        &:hover
+            cursor: pointer
                 
-            &-dots button
-                padding: 5.5px
-                font-size: 0px
-                width: 1px
-                height: 1px
-                background-color: #D8D8D8
-                border-radius: 100000px       
-                border: none
-                
-                &:hover
-                    cursor: pointer
-                
-section.tips ul.slick-dots
+.tips .slick-dots
     display: flex
     align-items: center
     justify-content: center
@@ -96,10 +96,7 @@ section.tips ul.slick-dots
     justify-content: space-between
     margin: auto
     padding: 0
-section.tips .slick
-            &-active div.tips-slider-block
-                box-shadow: 0px 0px 7px 1px  #000000
-                transition: 0.5s
+
 @media(max-width: 750px)
 
     .tips
@@ -114,9 +111,9 @@ section.tips .slick
                 &-title
                 
                     width: 280px
-    section.tips button.slick-prev
+    .tips .slick-prev
         opacity: 0
-    section.tips button.slick-next
+    .tips .slick-next
         opacity: 0
 @media(max-width: 1240px)
     .tips
@@ -133,10 +130,9 @@ section.tips .slick
                 &-title
                 
                     width: 280px
-    
-    section.tips button.slick-prev
+    .tips .slick-prev
         opacity: 0
-    section.tips button.slick-next
+    .tips .slick-next
         opacity: 0
     
     
