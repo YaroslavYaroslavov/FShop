@@ -1201,6 +1201,7 @@ main .slick-dots {
 @media (max-width: 1350px) {
   .inspiration {
     height: 300px;
+    padding-bottom: 0;
   }
   .inspiration-text {
     position: static;
@@ -1238,7 +1239,7 @@ main .slick-dots {
     position: static;
     text-align: center;
     width: 100%;
-    margin-top: 60px;
+    padding-top: 20px;
   }
   .inspiration-text__title {
     width: 299px;
