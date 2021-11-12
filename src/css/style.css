@@ -190,7 +190,7 @@ html {
   font-family: 'Gilroy Medium', sans-serif;
   font-weight: 500;
   font-size: 20px;
-  color: white;
+  color: #fff;
   background-color: #E89F71;
   border: none;
 }
@@ -533,8 +533,8 @@ main .slick-dots button:hover {
   }
   .topside {
     height: 100%;
-    background: -webkit-gradient(linear, left top, right top, color-stop(75%, #F9F1E7), color-stop(20%, #FCF8F3));
-    background: linear-gradient(to right, #F9F1E7 75%, #FCF8F3 20%);
+    background: -webkit-gradient(linear, left top, right top, color-stop(62%, #F9F1E7), color-stop(38%, #FCF8F3));
+    background: linear-gradient(to right, #F9F1E7 62%, #FCF8F3 38%);
     position: relative;
     overflow: hidden;
   }
@@ -736,7 +736,7 @@ main .slick-dots {
   font-weight: 500;
   font-size: 20px;
   color: #E89F71;
-  background-color: white;
+  background-color: #fff;
   border: 1px solid #E89F71;
   margin: auto;
   margin-bottom: 56px;
@@ -844,7 +844,7 @@ main .slick-dots {
   background: none;
   height: 24px;
   border: none;
-  color: white;
+  color: #fff;
 }
 
 .products-elements__element-block-buttonshare:hover {
@@ -866,7 +866,7 @@ main .slick-dots {
   background: none;
   height: 24px;
   border: none;
-  color: white;
+  color: #fff;
 }
 
 .products-elements__element-block-buttonlike:hover {
@@ -936,7 +936,7 @@ main .slick-dots {
   line-height: 150%;
   font-family: 'Gilroy Medium', sans-serif;
   font-weight: 500;
-  color: white;
+  color: #fff;
 }
 
 .products-elements__element-block-sale__value-new {
@@ -947,7 +947,7 @@ main .slick-dots {
   line-height: 150%;
   font-family: 'Gilroy Medium', sans-serif;
   font-weight: 500;
-  color: white;
+  color: #fff;
 }
 
 .products-elements__element-block-new {
@@ -1021,7 +1021,7 @@ main .slick-dots {
   font-family: 'Gilroy Medium', sans-serif;
   font-weight: 500;
   font-size: 16px;
-  color: white;
+  color: #fff;
   background-color: #E89F71;
   border: none;
 }
@@ -1239,7 +1239,7 @@ main .slick-dots {
     position: static;
     text-align: center;
     width: 100%;
-    padding-top: 20px;
+    padding-top: 20gpx;
   }
   .inspiration-text__title {
     width: 299px;
@@ -1362,8 +1362,8 @@ main .slick-dots {
 
 .tips .slick-dots li.slick-active button {
   background-color: #E89F71;
-  -webkit-box-shadow: 0 0 0 7px #fFF, 0 0 0 8px #E89F71;
-          box-shadow: 0 0 0 7px #fFF, 0 0 0 8px #E89F71;
+  -webkit-box-shadow: 0 0 0 7px #fff, 0 0 0 8px #E89F71;
+          box-shadow: 0 0 0 7px #fff, 0 0 0 8px #E89F71;
 }
 
 .tips .slick-dots li.slick-active button:hover {

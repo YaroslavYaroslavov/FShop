@@ -88,7 +88,7 @@
             +bold
             font-size: 56px
             line-height: 120%
-            color: #3A3A3A
+            color: $title-color
         &__subtitle
            
             +med
@@ -96,7 +96,7 @@
             height: 90px
             margin-left: 60px
             margin-top: 16px
-            color: #898989
+            color: $subtitle-color
             line-height: 150%
             font-size: 20px
         &__button
@@ -107,7 +107,7 @@
             margin-top: 48px
             +med
             font-size: 20px
-            color: white
+            color: $white
             background-color: $main-color
             border: none
             &:hover
@@ -124,7 +124,7 @@
         &-left
             height: 48px
             width: 48px
-            background-color: #f7decd
+            background-color: $arrow-left
             border-radius: 200px
             position: relative
             
@@ -223,7 +223,7 @@
             position: relative
             height: 40px    
             width: 40px 
-            background-color: #fffeaa
+            background-color: $avatar-color
             border-radius: 20px
             border: none
             padding: 0
@@ -257,14 +257,14 @@ main .slick
 
         &-dots li.slick-active button
             background-color: $main-color
-            box-shadow: 0 0 0 7px #f9f1e7, 0 0 0 8px $main-color
+            box-shadow: 0 0 0 7px $activebutton, 0 0 0 8px $main-color
         &-dots button
             transition: 1s
             padding: 5.5px
             font-size: 0px
             width: 1px
             height: 1px
-            background-color: #D8D8D8
+            background-color: $tips-button-color
             border-radius: 100000px       
             border: none
             &:hover
@@ -329,7 +329,7 @@ main .slick
                 display: none
     .topside
         height: 100%
-        background: linear-gradient(to right, #F9F1E7 75%,#FCF8F3 20%)
+        background: $topside-color
         position: relative
         overflow: hidden
         
